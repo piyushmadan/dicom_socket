@@ -1,0 +1,9 @@
+{
+  "name": "dicom_socket",
+  "version": "0.0.1",
+  "description": "dicom - sharing actions - share screen",
+  "dependencies": {
+	"express":"",
+	"socket.io":""
+}
+}
