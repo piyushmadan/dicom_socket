@@ -72,6 +72,24 @@ io.on('connection', function(socket){
 
   });       
 
+    socket.on('drawRect', function(evt){
+        
+    console.log('got drawRect event from #: ' + evt.webSocketId);
+
+    socket.broadcast.emit('drawRect',evt);
+
+  });       
+
+    socket.on('drawLine', function(evt){
+        
+    console.log('got drawLine event from #: ' + evt.webSocketId);
+
+    socket.broadcast.emit('drawLine',evt);
+
+  });       
+
+
+
 
     socket.on('wwwc', function(evt){
         
